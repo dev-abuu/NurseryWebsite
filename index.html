@@ -3,235 +3,443 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deeblooms - Childminding Services</title>
+    <title>Deeblooms | Childminding in Abbey Wood, London</title>
+    <meta name="description" content="Ofsted-registered home-based nursery at 52 Panfield Road, Abbey Wood. Early Years Teacher, funded hours, school pick-ups. Mon–Fri, 8am–6pm.">
+    <meta name="theme-color" content="#881888">
+    <meta property="og:title" content="Deeblooms | Childminding in Abbey Wood">
+    <meta property="og:description" content="A true home away from home, led by Miss Dee — Ofsted Good, 20+ years in early years.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar">
+    <a class="skip-link" href="#home">Skip to content</a>
+
+    <nav class="navbar" aria-label="Primary">
         <div class="nav-container">
-            <div class="nav-logo">
-                <h2><i class="fas fa-seedling"></i> Deeblooms</h2>
-                <span class="tagline">Where children thrive and bloom 🌱</span>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link"><i class="fas fa-heart"></i> About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#gallery" class="nav-link"><i class="fas fa-images"></i> Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link"><i class="fas fa-phone"></i> Contact</a>
-                </li>
+            <a href="#home" class="nav-logo">
+                <img class="logo-img" src="images/logo.png?v=2" alt="" width="72" height="48">
+                <span class="logo-text">
+                    <strong>Deeblooms</strong>
+                    <span>Play, grow, thrive</span>
+                </span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#day" class="nav-link">A typical day</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#news" class="nav-link">This term</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+            <a href="#contact" class="btn btn-nav">Book a visit</a>
+            <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
     <section id="home" class="hero">
-        <div class="floating-shapes">
-            <div class="shape shape-1">🌸</div>
-            <div class="shape shape-2">🌟</div>
-            <div class="shape shape-3">🌈</div>
-            <div class="shape shape-4">🦋</div>
-            <div class="shape shape-5">🌺</div>
-            <div class="shape shape-6">⭐</div>
-        </div>
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-character">
-                    <div class="character">👶</div>
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="container hero-grid">
+            <div class="hero-copy">
+                <p class="eyebrow">Home-based nursery · Abbey Wood</p>
+                <h1>A gentle start.<br>A place to <em>bloom</em>.</h1>
+                <p class="hero-lead">A safe, nurturing home-from-home at 52 Panfield Road, where children play, grow and thrive — led by Ms Dee, a qualified Early Years Teacher.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Book a visit</a>
+                    <a href="tel:+447446413338" class="btn btn-ghost">Call us</a>
                 </div>
-                <h1 class="hero-title">Welcome to Deeblooms! 🎉</h1>
-                <p class="hero-subtitle">Where children thrive and bloom 🌱</p>
-                <p class="hero-description">Creating a magical, nurturing environment where every little star can shine and reach their full potential! ✨</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Book a Visit Today</a>
-                    <a href="#about" class="btn btn-secondary"><i class="fas fa-magic"></i> Discover More</a>
-                </div>
+                <ul class="hero-meta">
+                    <li>Ofsted Good</li>
+                    <li>Mon–Fri, 8am–6pm</li>
+                    <li>15 &amp; 30-hour funding</li>
+                </ul>
+            </div>
+            <div class="hero-visual">
+                <figure class="hero-frame">
+                    <img src="images/hero.jpg" alt="Wooden toy train set on a play mat" width="900" height="1125" fetchpriority="high">
+                    <figcaption class="hero-badge">Home from home</figcaption>
+                </figure>
+                <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+                <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
             </div>
         </div>
     </section>
-    
+
+    <section class="trust" aria-label="What families look for">
+        <div class="container trust-row">
+            <article>
+                <span>01</span>
+                <h2>Ofsted Good</h2>
+                <p>Inspected February 2024 — ambitious curriculum, regular outings, a safe setting.</p>
+            </article>
+            <article>
+                <span>02</span>
+                <h2>20+ years</h2>
+                <p>From assistant to nursery manager, SENCo and Early Years Teacher.</p>
+            </article>
+            <article>
+                <span>03</span>
+                <h2>Funded hours</h2>
+                <p>15- and 30-hour entitlements, Tax-Free Childcare and student grants.</p>
+            </article>
+            <article>
+                <span>04</span>
+                <h2>School run</h2>
+                <p>Pick-ups and drop-offs from local primaries across Abbey Wood.</p>
+            </article>
+        </div>
+    </section>
+
     <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2><i class="fas fa-heart"></i> About Deeblooms</h2>
-                <p>Creating a magical world where children thrive and bloom with confidence ✨</p>
+        <div class="container about-grid">
+            <div class="about-media">
+                <img src="images/about.jpg" alt="A smiling child covered in colourful paint after a creative session" width="900" height="1200">
+                <blockquote>
+                    “Your child would love it here — a true home away from home.”
+                </blockquote>
             </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3><i class="fas fa-home"></i> Your Child's Second Home</h3>
-                    <p>At Deeblooms, we believe every child is a unique little flower waiting to bloom! 🌸 Located in the heart of Abbey Wood, London, we provide a warm, welcoming space where children feel safe, loved, and excited to explore their amazing potential. Our magical environment is designed to spark curiosity and joy in every little explorer! 🚀</p>
-                    
-                    <div class="features-grid">
-                        <div class="feature">
-                            <div class="feature-icon">🛡️</div>
-                            <h4>Safe & Secure</h4>
-                            <p>Child-proofed environment with CCTV monitoring and loving supervision</p>
-                        </div>
-                        <div class="feature">
-                            <div class="feature-icon">🎨</div>
-                            <h4>Learning Through Play</h4>
-                            <p>EYFS curriculum delivered through fun, creative activities and adventures</p>
-                        </div>
-                        <div class="feature">
-                            <div class="feature-icon">👥</div>
-                            <h4>Small Groups</h4>
-                            <p>Personalized attention with limited group sizes for maximum care</p>
-                        </div>
-                        <div class="feature">
-                            <div class="feature-icon">💝</div>
-                            <h4>SEN Support</h4>
-                            <p>Specialized care and understanding for children with additional needs</p>
-                        </div>
-                        <div class="feature">
-                            <div class="feature-icon">🎵</div>
-                            <h4>Music & Movement</h4>
-                            <p>Daily music sessions, dance, and physical activities for healthy development</p>
-                        </div>
-                        <div class="feature">
-                            <div class="feature-icon">🌿</div>
-                            <h4>Nature Connection</h4>
-                            <p>Outdoor play, gardening, and nature exploration activities</p>
-                        </div>
+            <div class="about-copy">
+                <p class="eyebrow">About Miss Dee</p>
+                <h2>A home-based nursery, led by an Early Years Teacher</h2>
+                <p>Miss Dee is an Ofsted-registered childminder and qualified Early Years Teacher (Level 6), with well over 20 years as a practitioner, deputy manager, nursery manager and SENCo. Children learn here by exploring, imagining, asking questions and building a can-do attitude.</p>
+                <p>The house is set up as a small nursery: age-appropriate toys, cooking and baking, planting, outdoor play, stories and role play. Settling in is unhurried, with daily feedback so you always know how the day went.</p>
+                <div class="about-stats">
+                    <div>
+                        <strong>Good</strong>
+                        <span>Ofsted, Feb 2024</span>
+                    </div>
+                    <div>
+                        <strong>4.9</strong>
+                        <span>From 10 parent reviews</span>
+                    </div>
+                    <div>
+                        <strong>EYT</strong>
+                        <span>Level 6 teacher</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
+    <section class="offer">
+        <div class="container">
+            <header class="section-header">
+                <p class="eyebrow">What we offer</p>
+                <h2>Care that feels considered</h2>
+                <p>From funded hours to the school run — the practical bits working parents actually need.</p>
+            </header>
+            <div class="offer-grid">
+                <article class="offer-card">
+                    <div class="offer-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Safe &amp; professional</h3>
+                    <p>DBS-checked team, paediatric first aid, food hygiene and safeguarding. Assistants are trained — not an afterthought.</p>
+                </article>
+                <article class="offer-card">
+                    <div class="offer-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+                    </div>
+                    <h3>Learning through play</h3>
+                    <p>EYFS every day: painting, cooking, gardening, stories, role play and Early Boost Talk for language.</p>
+                </article>
+                <article class="offer-card">
+                    <div class="offer-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg>
+                    </div>
+                    <h3>Funded hours</h3>
+                    <p>15- and 30-hour entitlements, 9-month and 2-year funding, Tax-Free Childcare and student grants.</p>
+                </article>
+                <article class="offer-card">
+                    <div class="offer-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M19 14c1.5-1 2-3 2-5A7 7 0 0 0 5 9c0 2 .5 4 2 5"/><path d="M12 18v3M8 21h8"/><circle cx="12" cy="9" r="2"/></svg>
+                    </div>
+                    <h3>SEND support</h3>
+                    <p>SENCo experience and a Level 3 SEND diploma — extra needs are planned for, not squeezed in.</p>
+                </article>
+                <article class="offer-card">
+                    <div class="offer-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11h18l-1.5 9h-15L3 11z"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+                    </div>
+                    <h3>School pick-up</h3>
+                    <p>Drop-offs and pick-ups from De Lucy, Boxgrove, St Thomas à Becket, Harris Garrard, Parkway, Bannockburn and Alexander McLeod.</p>
+                </article>
+                <article class="offer-card">
+                    <div class="offer-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 1 0-16 0c0 4.5 4 8 8 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                    </div>
+                    <h3>Out in the community</h3>
+                    <p>Garden play plus libraries, parks, soft play, farms and local shops — cultural capital, not just a back room.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="day" class="day">
+        <div class="container">
+            <header class="section-header light">
+                <p class="eyebrow">Rhythm of the day</p>
+                <h2>Unhurried, familiar, full</h2>
+                <p>Each day has a reassuring rhythm, flexible enough for the children actually in the room.</p>
+            </header>
+            <ol class="day-list">
+                <li>
+                    <time>8:00</time>
+                    <div>
+                        <h3>Welcome</h3>
+                        <p>Warm hello, free play and conversation — a calm start to the day.</p>
+                    </div>
+                </li>
+                <li>
+                    <time>Morning</time>
+                    <div>
+                        <h3>Stories &amp; songs</h3>
+                        <p>Books, music, movement and the seven EYFS areas through play.</p>
+                    </div>
+                </li>
+                <li>
+                    <time>Late morning</time>
+                    <div>
+                        <h3>Making &amp; exploring</h3>
+                        <p>Creative, sensory and problem-solving play, indoors and out.</p>
+                    </div>
+                </li>
+                <li>
+                    <time>Midday</time>
+                    <div>
+                        <h3>Meals &amp; rest</h3>
+                        <p>Snacks, lunch, personal care, rest and sleep as each child needs.</p>
+                    </div>
+                </li>
+                <li>
+                    <time>Afternoon</time>
+                    <div>
+                        <h3>Garden &amp; nature</h3>
+                        <p>Outdoor play, gardening and time in the local environment.</p>
+                    </div>
+                </li>
+                <li>
+                    <time>6:00</time>
+                    <div>
+                        <h3>Handover</h3>
+                        <p>A calm collection, with a little of the day’s story for you.</p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section>
+
     <section id="gallery" class="gallery">
         <div class="container">
-            <div class="section-header">
-                <h2><i class="fas fa-images"></i> Our Happy Moments</h2>
-                <p>Take a peek into our magical world of learning and fun! 📸</p>
+            <header class="section-header">
+                <p class="eyebrow">Life here</p>
+                <h2>The texture of a Deeblooms day</h2>
+                <p>Play, making, music and the outdoors — a peek at the world children step into.</p>
+            </header>
+            <div class="bento">
+                <figure class="bento-wide">
+                    <img src="images/outdoors.jpg" alt="Children playing outdoors with a colourful parachute" width="900" height="1200" loading="lazy">
+                    <figcaption>Learning through play</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/art.jpg" alt="Paintbrushes and wet paint on a canvas" width="800" height="600" loading="lazy">
+                    <figcaption>Arts &amp; crafts</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/forest.jpg" alt="A sunlit woodland path" width="800" height="600" loading="lazy">
+                    <figcaption>Nature time</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/crayons.jpg" alt="Sharpened coloured pencils standing in a row" width="800" height="600" loading="lazy">
+                    <figcaption>Making &amp; colour</figcaption>
+                </figure>
+                <figure class="bento-tall">
+                    <img src="images/books.jpg" alt="Alphabet blocks, books and coloured pencils" width="800" height="1000" loading="lazy">
+                    <figcaption>Stories &amp; thinking</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/toys.jpg" alt="A collection of wooden trains, blocks and classic toys" width="800" height="600" loading="lazy">
+                    <figcaption>Friendship &amp; care</figcaption>
+                </figure>
             </div>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">
-                        <i class="fas fa-child"></i>
-                        <span>Learning Through Play</span>
-                    </div>
-                    <div class="gallery-overlay">
-                        <h4>Creative Learning</h4>
-                        <p>Children exploring their imagination 🎨</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">
-                        <i class="fas fa-music"></i>
-                        <span>Music & Movement</span>
-                    </div>
-                    <div class="gallery-overlay">
-                        <h4>Dance & Sing</h4>
-                        <p>Joyful music sessions 🎵</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">
-                        <i class="fas fa-seedling"></i>
-                        <span>Nature Time</span>
-                    </div>
-                    <div class="gallery-overlay">
-                        <h4>Outdoor Adventures</h4>
-                        <p>Exploring the natural world 🌿</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">
-                        <i class="fas fa-puzzle-piece"></i>
-                        <span>Problem Solving</span>
-                    </div>
-                    <div class="gallery-overlay">
-                        <h4>Brain Games</h4>
-                        <p>Developing critical thinking 🧩</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">
-                        <i class="fas fa-paint-brush"></i>
-                        <span>Arts & Crafts</span>
-                    </div>
-                    <div class="gallery-overlay">
-                        <h4>Creative Expression</h4>
-                        <p>Little artists at work 🎭</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">
-                        <i class="fas fa-users"></i>
-                        <span>Friendship Time</span>
-                    </div>
-                    <div class="gallery-overlay">
-                        <h4>Social Skills</h4>
-                        <p>Building lasting friendships 👥</p>
-                    </div>
+        </div>
+    </section>
+
+    <section id="stories" class="stories">
+        <div class="container">
+            <header class="section-header">
+                <p class="eyebrow">Parent stories</p>
+                <h2>What families notice</h2>
+                <p>The kind of care you feel at pickup — children who don’t want to leave, and parents who can breathe.</p>
+            </header>
+            <div class="stories-grid">
+                <blockquote>
+                    <p>My son has been attending since January, and the progress has been incredible. Miss Dee is an inspirational practitioner — I wouldn’t send him anywhere else.</p>
+                    <footer>Carly · August 2026</footer>
+                </blockquote>
+                <blockquote>
+                    <p>My daughter started at 6 months, is now 3+ and doing very well. She gets upset at pick-up — that’s how much she loves it. 200% recommendation.</p>
+                    <footer>Kenny · August 2026</footer>
+                </blockquote>
+                <blockquote>
+                    <p>When he first came he couldn’t speak or do much on his own. The change has been wonderful. She feels like family.</p>
+                    <footer>Sally · August 2026</footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section id="news" class="news">
+        <div class="container news-grid">
+            <header class="section-header left">
+                <p class="eyebrow">From the newsletter</p>
+                <h2>All About Me, Belonging &amp; Autumn</h2>
+                <p>Getting ready for September — a gentle return, and a term about families, feelings and the season changing.</p>
+            </header>
+            <div class="news-body">
+                <p class="news-alert">Please reconfirm your 30 hours funding code before 31 August 2026. Speak to Ms Dee if you need help.</p>
+                <ul class="news-dates">
+                    <li><time datetime="2026-09-01">Mon 1 Sep</time> Inset day — setting closed to children</li>
+                    <li><time datetime="2026-09-02">Wed 2 Sep</time> Children return. We cannot wait to see every smiling face.</li>
+                    <li><time datetime="2026-10-26">26–30 Oct</time> Half term</li>
+                </ul>
+                <p>This autumn children will enjoy self-portraits, family pictures, naming feelings, leaf collecting, nature walks and stories about friendship and belonging. Families may send a named family photograph for supervised activities — copies you are happy for little hands to hold.</p>
+                <div class="news-downloads">
+                    <a class="btn btn-primary" href="docs/newsletter.pdf">Autumn newsletter</a>
+                    <a class="btn btn-ghost" href="docs/welcome-pack.pdf">Welcome pack</a>
                 </div>
             </div>
         </div>
     </section>
-    
+
+    <section class="faq" id="faq">
+        <div class="container faq-grid">
+            <header class="section-header left">
+                <p class="eyebrow">Good to know</p>
+                <h2>Questions parents usually ask</h2>
+                <p>If yours isn’t here, send a note — we’re happy to talk it through.</p>
+            </header>
+            <div class="faq-list">
+                <details open>
+                    <summary>When are you open?</summary>
+                    <p>Monday to Friday, 8:00am to 6:00pm, at 52 Panfield Road, London SE2 9DW. Hours can be discussed for working and shift-based families. Weekend overnight care isn’t offered.</p>
+                </details>
+                <details>
+                    <summary>How does settling in work?</summary>
+                    <p>We agree a flexible plan: a visit together, a short supported stay, then gradually longer sessions. Keep goodbyes warm and consistent, and a comfort item is welcome where agreed. You can ask for an update after drop-off.</p>
+                </details>
+                <details>
+                    <summary>What should we pack?</summary>
+                    <p>Named spare clothes, weather-appropriate coat and shoes, nappies and wipes if needed, a comfort item, and any agreed cup or medication handed to an adult — never left in the bag. Clothes should be fine with paint, mud and outdoor play.</p>
+                </details>
+                <details>
+                    <summary>Do you take funded hours?</summary>
+                    <p>Yes — 15- and 30-hour entitlements, 9-month and 2-year-old funding, Tax-Free Childcare and Universal Credit support where eligible. Funding is not automatic: you’ll need a code, and extra hours, meals and trips are agreed in advance.</p>
+                </details>
+                <details>
+                    <summary>Which schools do you pick up from?</summary>
+                    <p>De Lucy, Boxgrove, St Thomas à Becket RC, Harris Garrard Academy, Parkway, Bannockburn, and pick-ups from Alexander McLeod. Holiday activities are available too.</p>
+                </details>
+                <details>
+                    <summary>How do you approach learning?</summary>
+                    <p>Through play, using the EYFS. Children paint, cook, garden, visit the library and farm, and we use Early Boost Talk to grow language. School readiness — potty training, independence, routines — is part of the day, not a crash course in September.</p>
+                </details>
+                <details>
+                    <summary>Do you support children with additional needs?</summary>
+                    <p>Yes. Miss Dee has been a SENCo and holds a Level 3 SEND diploma. Extra needs are planned into the day, with close partnership with families.</p>
+                </details>
+                <details>
+                    <summary>How do I book a place or a visit?</summary>
+                    <p>Call, WhatsApp, email or use the form. We’ll arrange a settling visit so you and your child can meet us before anything is decided.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2><i class="fas fa-phone"></i> Get in Touch</h2>
-                <p>Ready to give your child the best start? Use the information below to reach out! 🌟</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3><i class="fas fa-info-circle"></i> Contact Information</h3>
-                    <div class="contact-item">
-                        <h4><i class="fas fa-map-marker-alt"></i> Location</h4>
-                        <p>Abbey Wood, London 🏠</p>
-                    </div>
-                    <div class="contact-item">
-                        <h4><i class="fas fa-phone"></i> Phone</h4>
-                        <p>+44 (0) 7446413338 📞</p>
-                    </div>
-                    <div class="contact-item">
-                        <h4><i class="fas fa-envelope"></i> Email</h4>
-                        <p><a href="mailto:deeblooms@outlook.com" class="contact-link">deeblooms@outlook.com 📧</a></p>
-                    </div>
-                    <div class="contact-item">
-                        <h4><i class="fas fa-clock"></i> Opening Hours</h4>
-                        <p>Mon-Fri: 7:00 AM - 6:00 PM ⏰</p>
-                    </div>
-                    <div class="contact-instruction">
-                        <h4><i class="fas fa-hand-point-right"></i> How to Book</h4>
-                        <p>Simply call, email, or message us using the contact details above to arrange a visit or discuss your childcare needs! We'd love to hear from you! 💕</p>
-                    </div>
+        <div class="container contact-grid">
+            <div class="contact-panel">
+                <p class="eyebrow light">Get in touch</p>
+                <h2>Come and see us</h2>
+                <p>Tell us a little about your family — days, funded hours, school run — and we’ll find a time to visit.</p>
+                <ul class="contact-details">
+                    <li>
+                        <span>Location</span>
+                        <strong><a href="https://maps.google.com/?q=52+Panfield+Road+London+SE2+9DW" target="_blank" rel="noopener noreferrer">52 Panfield Road, London SE2 9DW</a></strong>
+                    </li>
+                    <li>
+                        <span>Phone</span>
+                        <strong><a href="tel:+447446413338">+44 (0) 7446 413338</a></strong>
+                    </li>
+                    <li>
+                        <span>Email</span>
+                        <strong><a href="mailto:deeblooms@outlook.com">deeblooms@outlook.com</a></strong>
+                    </li>
+                    <li>
+                        <span>Hours</span>
+                        <strong>Mon–Fri, 8:00am – 6:00pm</strong>
+                    </li>
+                </ul>
+                <div class="contact-quick">
+                    <a class="btn btn-on-dark" href="https://wa.me/447446413338" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                    <a class="btn btn-on-dark-ghost" href="https://www.instagram.com/dee.blooms" target="_blank" rel="noopener noreferrer">Instagram</a>
                 </div>
             </div>
+            <form class="contact-form" id="contactForm" novalidate>
+                <h3>Request a visit</h3>
+                <label>
+                    Your name
+                    <input type="text" name="name" required autocomplete="name" placeholder="Jane Smith">
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" required autocomplete="email" placeholder="you@email.com">
+                </label>
+                <label>
+                    Phone
+                    <input type="tel" name="phone" autocomplete="tel" placeholder="07…">
+                </label>
+                <label>
+                    Tell us about your child
+                    <textarea name="message" rows="4" required placeholder="Ages, days you need, anything we should know…"></textarea>
+                </label>
+                <button type="submit" class="btn btn-primary">Send message</button>
+                <p class="form-note">Opens your email app with the details filled in — nothing is stored on this site.</p>
+            </form>
         </div>
     </section>
-    
+
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3><i class="fas fa-seedling"></i> Deeblooms</h3>
-                    <p>Where children thrive and bloom 🌱</p>
-                    <p>Abbey Wood, London 🏠</p>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/dee.blooms" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
+        <div class="container footer-grid">
+            <div>
+                <a href="#home" class="nav-logo footer-logo">
+                    <img class="logo-img" src="images/logo.png?v=2" alt="" width="72" height="48">
+                    <span class="logo-text">
+                        <strong>Deeblooms</strong>
+                        <span>Where children play, grow and thrive</span>
+                    </span>
+                </a>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Deeblooms. All rights reserved. 🌟</p>
-            </div>
+            <nav aria-label="Footer">
+                <a href="#about">About</a>
+                <a href="#news">This term</a>
+                <a href="docs/welcome-pack.pdf">Welcome pack</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <p class="footer-copy">&copy; 2026 Deeblooms. 52 Panfield Road, London SE2 9DW.</p>
         </div>
     </footer>
+
+    <a class="whatsapp-float" href="https://wa.me/447446413338" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M20.5 3.5A11 11 0 0 0 2.1 16.7L1 23l6.5-1.1A11 11 0 0 0 20.5 3.5zm-8.5 17a9 9 0 0 1-4.6-1.3l-.3-.2-3.9.7.7-3.8-.2-.3A9 9 0 1 1 12 20.5zm5-6.7c-.3-.1-1.6-.8-1.9-.9s-.4-.1-.6.1-.7.9-.8 1-.3.2-.6.1a7.4 7.4 0 0 1-2.2-1.4 8 8 0 0 1-1.5-1.9c-.2-.3 0-.4.1-.6l.4-.5.1-.3a.5.5 0 0 0 0-.5c0-.1-.6-1.4-.8-1.9s-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5 5 0 0 0 1 2.6 11.5 11.5 0 0 0 4.4 4.1 14 14 0 0 0 1.4.5 3.4 3.4 0 0 0 1.6.1 2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .1-1.2c-.1-.1-.3-.2-.6-.3z"/></svg>
+    </a>
+
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
